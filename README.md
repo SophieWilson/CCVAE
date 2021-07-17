@@ -17,4 +17,4 @@ A description of each file:
 
 **ccvae_analysis** - This is the further analysis of the model, LDA is included in this along with SSIM measurements and reconstruction variation analysis. 
 
-Many other files were created throughout the course of this project, these are not included in this repo to make it easier to read. If interested the full file repo for this project are located at https://github.com/SophieWilson/VariationalConditionalAutoencoder
+Many other files were created throughout the course of this project, these are not included in this repo to make it easier to read. If interested the full file repo for this project it is located at https://github.com/SophieWilson/VariationalConditionalAutoencoder
