@@ -6,6 +6,7 @@ To run the code use **Wrapper**, this file runs all the subfiles to complete the
 The project has been split into distinct files which all serve individual purpose but interconnect with each other and so all files must be in the same directory for the code to work. 
 
 A description of each file:
+
 **Wrapper** - The file which runs the whole analysis, this runs the preprocessing first and then the model before outputting all plots and tables that are made during the analysis. For this some files will be saved into the directory and so a file can be made to store these ahead of time. 
 
 **MRI_CVAE** - This is the conditional convolutional variational autoencoder model, all image preprocessing is done in this script and the model architecture can be seen. No further analysis is found in this file.
