@@ -109,17 +109,17 @@ def latent_ssim_analysis(label, num_recon, max_z, decoder, latent_dim):
 
 #lat_df, diff = latent_ssim_analysis(0, 10, 4, decoder, 50)
 
-#def latent_space_var(label, sides, max_z, decoder, latent_dim):
-#    decoded_list = [[] for x in range(latent_dim)]
-#    for i in range(latent_dim): # looping through dimensions
-#        z_ = [0] * i
-#        for j in range(0, sides): # looping through number of images
-#            z1 = (((j / (sides-1)) * max_z)*2) - max_z
-#            z_.append(z1)
-#            vec = construct_numvec(label, z_)
-#            decoded = decoder.predict(vec)
-#            decoded = decoded[:,:,:,:,0]
-#            decoded_list[i].append(decoded)
-#    return decoded_list
+def latent_space_var(label, sides, max_z, decoder, latent_dim):
+    decoded_list = [[] for x in range(latent_dim)]
+    for i in range(latent_dim): # looping through dimensions
+        z_ = [0] * i
+        for j in range(0, sides): # looping through number of images
+            z1 = (((j / (sides-1)) * max_z)*2) - max_z
+            z_.append(z1)
+            vec = construct_numvec(label, z_)
+            decoded = decoder.predict(vec)
+            decoded = decoded[:,:,:,:,0]
+            decoded_list[i].append(decoded)
+    return decoded_list
 
 
